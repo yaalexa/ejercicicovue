@@ -12,6 +12,7 @@ import Notifications from "@/pages/Notifications.vue";
 import UpgradeToPRO from "@/pages/UpgradeToPRO.vue";
 import Sigin from "@/pages/Sign-in.vue";
 import SigUp from "@/pages/SigUp.vue";
+import DashboardUser from "@/pages/User/Dashboard.vue";
 Vue.use(VueRouter);
 const routes = [
   {
@@ -25,9 +26,14 @@ const routes = [
     component: Sigin,
   },
   {
-    path: "/dashboard",
+    path: "/DashboardUser",
+    name: "DashboardUser",
+    component: DashboardUser,
+  },
+  {
+    path: "/",
+    name: "ruta",
     component: DashboardLayout,
-    redirect: "/dashboard",
     children: [
       {
         path: "dashboard",

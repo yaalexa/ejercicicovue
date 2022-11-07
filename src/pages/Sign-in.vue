@@ -34,7 +34,7 @@
                       </md-field>
                     </div>
                     <div class="md-layout-item md-small-size-100 md-size-100">
-                      <md-button target="_blank" class="md-primary md-round"
+                      <md-button @click="Registro()" target="_blank" class="md-primary md-round"
                         >Aceptar</md-button
                       >
                       <br/>
@@ -149,11 +149,7 @@ export default {
   },
   methods:{
 	Registro() {
-      axios.post("http://127.0.0.1:8000/api/user_register", this.user).then((data) => {
-        console.log(data);
-        this.$router.push('/Sigin')
-      });
-      
+    this.$router.push({name:'DashboardUser'})
     }
   },
 };

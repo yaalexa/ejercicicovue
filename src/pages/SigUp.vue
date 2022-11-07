@@ -174,7 +174,7 @@ export default {
 	Registro() {
       axios.post("http://127.0.0.1:8000/api/user_register", this.user).then((data) => {
         console.log(data);
-        this.$router.push('/Sigin')
+        this.$router.push({name:'ruta'})
       });
       
     }
