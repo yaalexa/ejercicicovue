@@ -1,9 +1,7 @@
 <template>
   <div
-    class="sidebar"
-    :data-color="sidebarItemColor"
-    :data-image="sidebarBackgroundImage"
-    :style="sidebarStyle"
+    class="sidebar" 
+    
   >
     <div class="logo">
       <a href="#" class="simple-text logo-mini">
@@ -13,7 +11,7 @@
       </a>
 
       <a
-        href="https://www.creative-tim.com/product/vue-material-dashboard"
+        href=""
         target="_blank"
         class="simple-text logo-normal"
       >
@@ -47,19 +45,16 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Vue MD",
+      default: "TODES",
     },
-    sidebarBackgroundImage: {
-      type: String,
-      default: require("@/assets/img/sidebar-2.jpg"),
-    },
+    
     imgLogo: {
       type: String,
-      default: require("@/assets/img/vue-logo.png"),
+      default: require("@/assets/img/logotodess.png"),
     },
     sidebarItemColor: {
       type: String,
-      default: "green",
+      default: "purple",
       validator: (value) => {
         let acceptedValues = ["", "purple", "blue", "green", "orange", "red"];
         return acceptedValues.indexOf(value) !== -1;

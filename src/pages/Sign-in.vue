@@ -149,7 +149,7 @@ export default {
   },
   methods:{
 	Registro() {
-    this.$router.push({name:'DashboardUser'})
+    this.$router.push({name:'ruta'})
     }
   },
 };

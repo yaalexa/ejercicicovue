@@ -101,23 +101,18 @@ export default {
   data() {
     return {
       documentationLink:
-        "https://creativetimofficial.github.io/vue-material-dashboard/documentation",
-      shareUrl: "https://www.creative-tim.com/product/vue-material-dashboard",
+        "",
+      shareUrl: "",
       buyUrl: "",
-      freeUrl: "https://www.creative-tim.com/product/vue-material-dashboard",
+      freeUrl: "",
       isOpen: false,
       sidebarColors: [
         { color: "purple", active: false },
-        { color: "blue", active: false },
-        { color: "green", active: true },
-        { color: "orange", active: false },
-        { color: "red", active: false },
+      
       ],
       sidebarImages: [
         { image: require("@/assets/img/sidebar-1.jpg"), active: false },
-        { image: require("@/assets/img/sidebar-2.jpg"), active: true },
-        { image: require("@/assets/img/sidebar-3.jpg"), active: false },
-        { image: require("@/assets/img/sidebar-4.jpg"), active: false },
+   
       ],
     };
   },

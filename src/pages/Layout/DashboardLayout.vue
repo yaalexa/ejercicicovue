@@ -11,33 +11,35 @@
         <md-icon>dashboard</md-icon>
         <p>Dashboard</p>
       </sidebar-link>
+
       <sidebar-link to="/user">
         <md-icon>person</md-icon>
-        <p>User Profile</p>
+        <p>Perfil</p>
       </sidebar-link>
+
       <sidebar-link to="/table">
         <md-icon>content_paste</md-icon>
         <p>Table list</p>
       </sidebar-link>
-      <sidebar-link to="/typography">
+
+      <sidebar-link to="/Eventos">
         <md-icon>library_books</md-icon>
-        <p>Typography</p>
+        <p>Eventos</p>
       </sidebar-link>
-      <sidebar-link to="/icons">
-        <md-icon>bubble_chart</md-icon>
-        <p>Icons</p>
+
+      <sidebar-link to="/Categorias">
+        <md-icon>library_books</md-icon>
+        <p>Categorias</p>
       </sidebar-link>
-      <sidebar-link to="/maps">
-        <md-icon>location_on</md-icon>
-        <p>Maps</p>
+
+      <sidebar-link to="/Reportes">
+        <md-icon>library_books</md-icon>
+        <p>Reportes</p>
       </sidebar-link>
-      <sidebar-link to="/notifications">
-        <md-icon>notifications</md-icon>
-        <p>Notifications</p>
-      </sidebar-link>
-      <sidebar-link to="/upgrade" class="active-pro">
-        <md-icon>unarchive</md-icon>
-        <p>Upgrade to PRO</p>
+
+      <sidebar-link to="/Roles">
+        <md-icon>person</md-icon>
+        <p>Roles</p>
       </sidebar-link>
     </side-bar>
 
@@ -45,8 +47,7 @@
       <top-navbar></top-navbar>
 
       <fixed-plugin
-        :color.sync="sidebarBackground"
-        :image.sync="sidebarBackgroundImage"
+        
       >
       </fixed-plugin>
 
@@ -74,8 +75,8 @@ export default {
   },
   data() {
     return {
-      sidebarBackground: "green",
-      sidebarBackgroundImage: require("@/assets/img/sidebar-2.jpg"),
+      sidebarBackground: "purple",
+      //sidebarBackgroundImage: require("@/assets/img/sidebar-2.jpg"),
     };
   },
 };

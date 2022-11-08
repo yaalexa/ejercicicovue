@@ -13,6 +13,12 @@ import UpgradeToPRO from "@/pages/UpgradeToPRO.vue";
 import Sigin from "@/pages/Sign-in.vue";
 import SigUp from "@/pages/SigUp.vue";
 import DashboardUser from "@/pages/User/Dashboard.vue";
+
+import Eventos from "@/pages/Eventos.vue";
+import Categorias from "@/pages/Categorias.vue";
+import Reportes from "@/pages/Reportes.vue";
+import Roles from "@/pages/Roles.vue";
+
 Vue.use(VueRouter);
 const routes = [
   {
@@ -45,6 +51,30 @@ const routes = [
         name: "User Profile",
         component: UserProfile,
       },
+      {
+        path: "Eventos",
+        name: "Eventos",
+        component: Eventos,
+      },
+
+      {
+        path: "Categorias",
+        name: "Categorias",
+        component: Categorias,
+      },
+      
+      {
+        path: "Reportes",
+        name: "Reportes",
+        component: Reportes,
+      },
+
+      {
+        path: "Roles",
+        name: "Roles",
+        component: Roles,
+      },
+
       {
         path: "table",
         name: "Table List",
